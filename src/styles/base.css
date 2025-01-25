@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
+    @apply text-text l:text-lg;
+    scroll-behavior: smooth;
+}
+
+.title-font,
+.title, h1,h2,h3,h4,h5,h6 {
+    font-family: "Gotu", sans-serif;
+    font-weight: 400 !important;
+}
+
+.sacramento {
+    font-family: "Sacramento", cursive !important;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.title {
+    @apply text-4xl xs:text-5xl s:text-6xl m:text-7xl l:text-8xl;
+}
+
+h1 {
+    @apply text-3xl s:text-4xl m:text-5xl l:text-6xl;
+}
+
+h2 {
+    @apply text-2xl s:text-3xl m:text-4xl l:text-5xl;
+}
+
+h3 {
+    @apply text-xl s:text-2xl m:text-3xl l:text-4xl;
+}
+
+h4 {
+    @apply text-lg s:text-xl m:text-2xl l:text-3xl;
+}
+
+h5 {
+    @apply text-base s:text-lg m:text-xl l:text-2xl;
+}
+
+h6 {
+    @apply text-xs s:text-sm m:text-base l:text-lg;
+}
+
+@layer utilities {
+    /* Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #626937 transparent;
+    }
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 7px;
+    }
+    *::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 5px;
+    }
+    *::-webkit-scrollbar-thumb {
+        background-color: #626937;
+        border-radius: 14px;
+        border: 3px solid transparent;
+    }
+}
+
+/*Nav animations
+--------------------------------------------------*/
+
+.animated-underline {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.animated-underline::after {
+    display: block;
+    content: "";
+    @apply border-b-2 border-secondary;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.animated-underline:hover::after {
+    transform: scaleX(1);
+}
+
+.content {
+    @apply w-[90%] max-w-[90%] lg:w-[85%] xl:w-[80%] xl:max-w-[80%] mx-auto;
+}
+
+button,
+a,
+.smooth-show {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button-primary {
+    @apply bg-primary text-secondary px-4 py-2 m:px-9 m:py-3 hover:bg-text;
+}
+
+.button-yellow {
+    @apply bg-secondary border-2 border-yellow text-yellow px-4 py-2 m:px-9 m:py-3 hover:bg-yellow hover:text-secondary font-semibold;
+}
+
+.button-brown {
+    @apply bg-secondary border-2 border-brown text-brown px-4 py-2 m:px-9 m:py-3 hover:bg-brown hover:text-secondary font-semibold;
+}
+
+.ribbon-effect {
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 80% 100%, 0 100%);
+}
+
+.vibur-regular {
+    font-family: "Vibur", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bentham-regular {
+    font-family: "Bentham", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cinzel-decorative-regular {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}    
+
+.playfair-display-sc-regular {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .questrial-regular {
+    font-family: "Questrial", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .suranna-regular {
+    font-family: "Suranna", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .libre-caslon-display-regular {
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .italiana-regular {
+    font-family: "Italiana", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .antic-didone-regular {
+    font-family: "Antic Didone", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.roboto {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.maven-pro {
+    font-family: "Maven Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.nunito {
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .sulphur-point-regular {
+    font-family: "Sulphur Point", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .kulim-park-regular {
+    font-family: "Kulim Park", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lexend-exa {
+    font-family: "Lexend Exa", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .tenor-sans-regular {
+    font-family: "Tenor Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  

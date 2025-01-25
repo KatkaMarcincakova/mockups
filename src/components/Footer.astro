@@ -1,0 +1,38 @@
+---
+import banner from "@assetsLocal/banner-dark.svg";
+import FooterItem from "./FooterItem.astro";
+
+const currentDateTime = new Date();
+const date = currentDateTime.getFullYear().toString();
+---
+
+<div
+  class="text-secondary py-4 bg-cover bg-no-repeat bg-center flex items-center justify-between px-4"
+  style={{ backgroundImage: `url('${banner.src}')` }}>
+  <div class="flex items-center space-x-2">
+    <h2 class="text-lg font-semibold">KiTECH</h2>
+    <span class="text-sm">S láskou robené vecičky na každú príležitosť.</span>
+  </div>
+
+  <div class="flex items-center space-x-4">
+    <FooterItem text="Instagram" href="https://www.instagram.com/kitech_creative/" />
+    <FooterItem text="Facebook" href="https://www.facebook.com/profile.php?id=61566967960495" />
+    <FooterItem text="Email" href="mailto:kitech@devity.sk" />
+  </div>
+
+  <div class="text-xs tracking-wide text-right">
+    <div>
+      <a href="https://devity.sk/" target="_blank" class="hover:underline">
+        © DEVITY Software s.r.o. 2023 - {date}
+      </a>
+      &nbsp;|&nbsp;
+      <a
+        href="https://katkamarcincakova.github.io/CV/"
+        target="_blank"
+        class="hover:underline"
+      >
+        Dizajn: KK
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Ribbon from '@components/Ribbon.astro';
+---
+
+<Layout>
+    <div class="flex flex-col items-start mb-6 w-max mx-auto">
+        <label class="mb-2 text-lg font-semibold text-gray-700">
+          Napíš meno, ktoré chceš vyskúšať na stuhe:
+        </label>
+        <input
+          id="nameInput"
+          type="text"
+          class="w-full sm:w-96 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Zuzka"
+        />
+    </div>
+    <div class="grid grid-cols-1 gap-4 xxs:grid-cols-1 xs:grid-cols-2 s:grid-cols-3 m:grid-cols-4 xl:grid-cols-5 p-4 mx-auto">
+        <Ribbon title="Vibur" font="vibur-regular"  />
+        <Ribbon title="Bentham" font="bentham-regular" />
+        <Ribbon title="Cinzel" font="cinzel-decorative-regular" />
+        <Ribbon title="Playfair" font="playfair-display-sc-regular" />
+        <Ribbon title="Prata" font="prata-regular" />
+        <Ribbon title="Questrial" font="questrial-regular" />
+        <Ribbon title="Suranna" font="suranna-regular" />
+        <Ribbon title="Libre Caslon Display" font="libre-caslon-display-regular" />
+        <Ribbon title="Italiana" font="italiana-regular" />
+        <Ribbon title="Antic Didone" font="antic-didone-regular" />
+        <Ribbon title="Montserrat" font="montserrat" />
+        <Ribbon title="Poppins" font="poppins-regular" />
+        <Ribbon title="Roboto" font="roboto" />
+        <Ribbon title="Maven Pro" font="maven-pro" />
+        <Ribbon title="Nunito" font="nunito" />
+        <Ribbon title="Bebas-neue" font="bebas-neue-regular" />
+        <Ribbon title="Sulphur-point" font="sulphur-point-regular" />
+        <Ribbon title="Kulim-park" font="kulim-park-regular" />
+        <Ribbon title="Lexend-exa" font="lexend-exa" />
+        <Ribbon title="Tenor-sans" font="tenor-sans-regular" />
+    </div>      
+</Layout>
